@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Final Grade Calculator</title>
+    <script src="https://kit.fontawesome.com/8c371e499e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>Final Exxam Calculator</h1>
+            <h5>By Zach McMullen</h5>
+        </header>
+        <form>
+            <div class="input-container">
+                <div class="input-content">
+                    <span>Your current grade is a:</span>
+                    <input class="current-grade">
+                    <span>%.</span>
+                </div>
+                <div class="input-content">
+                    <span>Your final exam is worth:</span>
+                    <input class="exam-weight">
+                    <span>% of your final grade.</span>
+                </div>
+                <div class="input-content">
+                    <span>You want a:</span>
+                    <input class="desired-semester-grade">
+                    <span>% as your final grade.</span>
+                </div>
+            </div>
+            <button type="button" class="submit-btn">Submit</button>     
+        </form>
+    
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close-container">
+                    <i class="fas fa-times" id="modal-close"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="you-need"></div>
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
