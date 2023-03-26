@@ -75,37 +75,35 @@ input {
 .modal {
     display: none;
     justify-content: center;
+    align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .modal-container {
-    background-color: rgba(0, 0, 0, 0.9);
-    margin: 5rem auto;
-    padding: 3rem;
-    width: 60%;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
 }
 
-.modal-close-container {
+.modal-close {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding: 1rem;
     font-size: 1.2rem;
 }
 
 .modal-content {
-    padding: 4rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.25rem;
 }
 
